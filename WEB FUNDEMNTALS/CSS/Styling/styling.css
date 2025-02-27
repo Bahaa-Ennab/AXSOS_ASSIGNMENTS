@@ -9,6 +9,9 @@ h2{
     text-align: center;
     color: aliceblue;
     background-color: rgb(124, 19, 124);
+    font-style: italic;
+    font-weight: 100
+    ;
 }
 h3{
     text-align: right;
