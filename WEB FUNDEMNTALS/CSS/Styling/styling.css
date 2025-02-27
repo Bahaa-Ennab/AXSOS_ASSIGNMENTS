@@ -1,0 +1,17 @@
+h1{
+    color: aliceblue;
+    background-color: black;
+}
+#blue {
+    color: aqua;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(124, 19, 124);
+}
+h3{
+    text-align: right;
+    background-color: cyan;
+}
+
