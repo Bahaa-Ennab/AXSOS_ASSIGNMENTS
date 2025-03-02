@@ -1,6 +1,9 @@
 h1{
     color: aliceblue;
     background-color: black;
+    margin: 1px;
+    height: 40px;
+    padding: 10px 100px 0px 10px ;
 }
 #blue {
     color: aqua;
@@ -8,13 +11,19 @@ h1{
 h2{
     text-align: center;
     color: aliceblue;
-    background-color: rgb(124, 19, 124);
+    background-color:#663399;
     font-style: italic;
-    font-weight: 100
-    ;
+    font-weight: 100;
+    margin: 7px 0px 7px 0px;
+    height: 20px;
+    padding: 10px;
+
 }
 h3{
     text-align: right;
-    background-color: cyan;
+    background-color:#9fc5f8;
+    margin: 0%;
+    height: 20px;
+    padding: 10px 10px 10px 100px
 }
 
