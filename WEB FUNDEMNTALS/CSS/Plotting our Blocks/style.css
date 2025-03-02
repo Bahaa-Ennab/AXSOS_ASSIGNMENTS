@@ -22,7 +22,7 @@
     width: 700px;
     background-color: red;
     display: inline-block;
-    padding: 1% 1% 0% 1% ;
+    padding: 1% 1% 1% 1% ;
 }
 .sub-content {
     height: 200px;
@@ -37,6 +37,6 @@
     width: 660px;
     background-color: purple;
     display: inline-block;
-    margin: 2% 0%  0% ;
-    padding:1% ;
+    margin: 2% 0%  0% 0.8%;
+    padding:1% 1.5% 0% 0% ;
 }
