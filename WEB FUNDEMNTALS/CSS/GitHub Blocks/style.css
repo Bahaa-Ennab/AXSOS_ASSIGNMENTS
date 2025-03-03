@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: #727eb2;
+    font-style: initial;
+}
+img{
+    height:200px ;
+}
+.firstrow{
+    background-color:#5ecaff ;
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    padding: 2%;
+}
+.secondrow{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d8a2ba;
+    padding: 2%;
+    margin: 2%;
+}
+.lastrow{
+    display: flex;
+    background-color:#fcfcff;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 2%;
+}
+.links{
+    text-align: center;
+    font-size: 120%;
+    color: rgb(113, 113, 113);
+}
+.main{
+    background-color:  #e2ecfb;
+    padding-bottom: 1%;
+}
