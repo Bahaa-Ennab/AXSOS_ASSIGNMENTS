@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    position: relative;
+    /* padding-bottom: 100%; */
+    height: px;
+}
+
+.mainheader {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    height: 80px;
+    align-items: center;
+    padding: 0% 1% 0% 10%
+}
+
+h1 {
+    margin-left: 3%;
+}
+
+li {
+    padding: 1%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 17px;
+    width: 62%;
+    padding: 3%;
+}
+
+#headline {
+    font-weight: 900;
+    font-size: 15px;
+}
+
+button {
+    background-color: #17a2b8;
+    width: 10%;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+}
+
+.profile {
+    border: #cccccc solid 4px;
+    width: 40%;
+    padding-bottom: 1%;
+    margin: 3% 0% 0% 13%;
+}
+
+.name {
+    margin: 15% 0% 0% 5%;
+    font-size: 180%;
+}
+
+.profileheader {
+    padding-bottom: 20%;
+    background-color: #17a2b8;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin: 3% 0% 3% 5%;
+}
+
+#locationmark {
+    width: 3%;
+    margin-right: 3%;
+}
+
+p {
+    margin: 0% 0% 0% 5%;
+    font-size: 110%;
+}
+
+#gear {
+    width: 4%;
+    margin-right: 2%;
+}
+
+.edit {
+    margin: 3% 0% 3% 5%;
+    align-items: center;
+}
+
+#jane-m {
+    width: 10%;
+    border-radius: 50%;
+    border: solid gray 5px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.requests {
+    width: 30%;
+    margin: 3% 0% 10% 3%;
+    position: absolute;
+    border: #cccccc solid;
+    height: 10%;
+    right: 13%;
+    padding-bottom: 20%;
+
+}
+
+.header1 {
+    display: flex;
+    background-color: #333333;
+    color: white;
+    padding: 7% 8% 4% 8%;
+
+}
+
+.number1 {
+    background-color: #cccccc;
+    width: 40px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2%;
+    margin-right: 5%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.todd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accounts {
+    width: 17%;
+    border-radius: 50%;
+    margin: 3% 0%;
+    border: #cccccc solid;
+}
+
+.account-names {
+    font-size: 140%;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+.phill {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.connections {
+    margin-top: 1%;
+    border: #cccccc solid;
+    position: absolute;
+    top: 90%;
+    right: 13%;
+    width: 30%;
+    padding-bottom: 1%;
+}
+
+.connect-header {
+    background-color: #333333;
+    color: white;
+    padding: 7% 8% 4% 8%;
+    display: flex;
+}
+
+#link {
+    font-size: 150%;
+    align-content: center;
+    margin: 5%;
+}
+
+hr {
+    padding-bottom: 1%;
+    background-color: #cccccc;
+    margin-bottom: 2%
+}
+.education{
+    border: #cccccc solid;
+    position: absolute;
+    top: 110%;
+    left: 13%;
+    width: 40%;
+}
+.education-heading{
+    background-color: #333333;
+    color: white;
+    padding: 2% 2% 2% 5%;
+}
+.lie{
+    padding: 2%;
+}
+.l1{
+    font-size: 130%;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+.l2{
+    color: #7a7a7a;
+    margin-bottom: 2%;
+}
+.click{
+    width: 12%;
+}
