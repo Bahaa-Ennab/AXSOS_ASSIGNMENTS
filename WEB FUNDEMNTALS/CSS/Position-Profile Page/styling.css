@@ -109,6 +109,8 @@ p {
     height: 10%;
     right: 13%;
     padding-bottom: 20%;
+    min-width: 160px;
+    min-height: 80px;
 
 }
 
