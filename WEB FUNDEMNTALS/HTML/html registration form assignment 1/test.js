@@ -1,0 +1,1 @@
+function remove (nums,val)

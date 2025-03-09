@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 970px;
+}
+
+header {
+    padding: 0% 5% 0% 5%;
+    background-color: #245075;
+    position: relative;
+    border-bottom: solid #183753;
+}
+
+#heading {
+    display: flex;
+    padding: 0%;
+    width: 100%;
+}
+
+
+#logo {
+    width: 40%;
+    margin-right: 30%;
+}
+
+.searchbox {
+    padding: 5% 5% 5% 15%;
+    width: 130%;
+    border-radius: 10px;
+    background-color: #444;
+    box-shadow: black 1px 3px 3px;
+}
+
+input {
+    height: 35px;
+    text-align: center;
+    font-size: 90%;
+    border: solid 2px #959595;
+    justify-content: space-between;
+}
+
+button {
+    height: 35px;
+    width: 20%;
+    color: white;
+    background-color: #245075;
+    border: #959595 solid 2px;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+nav {
+    margin: 2% 0% 0% 0%;
+    background-color: #427cac;
+    height: 30px;
+    align-content: center;
+    padding: 0% 10% 2% 10%;
+    width: 80%;
+    box-shadow: black 1px 3px 3px;
+    border-radius: 6px;
+}
+
+.navbar {
+    display: flex;
+    font-size: 140%;
+    list-style: none;
+    justify-content: space-around;
+    color: white;
+    align-content: center;
+}
+
+a {
+    color: white;
+}
+
+#list1 {
+    padding: 2%;
+    list-style-position: inside;
+    width: 100%;
+}
+
+.underheader {
+    display: flex;
+    position: relative;
+}
+
+.firstgroup {
+    font-size: 130%;
+    color: rgb(43, 22, 22);
+    width: 130%;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.secondgroup {
+    width: 600px;
+    text-align: center;
+    color: white;
+    font-size: 110%;
+    margin: 10% 0% 5% 20%;
+}
+
+.thirdgroup {
+    text-align: center;
+    color: yellow;
+    font-size: 150%;
+    margin: 0% 0% 5% 20%;
+    width: 100%;
+}
+
+#zen {
+    margin-top: 5%;
+    color: white;
+    font-size: 90%;
+}
+
+span {
+    color: #72a8d6;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.started {
+    border-top: solid #72a8d6;
+    text-align: center;
+    width: 50%;
+    margin: 1% 5% 1% 5%;
+}
+
+#mainlist {
+    color: #98c2ea;
+    list-style: square;
+    list-style-position: inherit;
+}
+
+footer {
+    padding-bottom: 3%;
+    padding-top: 5%;
+    background-image: linear-gradient( #1e3f5e,#3372a8);
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 110%;
+    color:#73aad7 ;
+}
+.copy{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 80%;
+    color: #73aad7;
+}
