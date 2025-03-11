@@ -59,3 +59,10 @@ function fibonacciArray(n){
 console.log(arr)
 }
 fibonacciArray(10)
+
+var res = 0
+if(oper == "*"){
+    res=x*y
+}
+
+}
