@@ -51,18 +51,16 @@
 
 // reverse([1,2,3,4,5])
 // 555555555555555555555555555555555555555555555555555555555555555555555555
-function fibonacciArray(n){
-    var arr= [0,1]
-    for(i=1;i<n-1;i++){
-        arr.push(arr[i]+arr[i-1])
-    }
-console.log(arr)
-}
-fibonacciArray(10)
+// function fibonacciArray(n){
+//     var arr= [0,1]
+//     for(i=1;i<n-1;i++){
+//         arr.push(arr[i]+arr[i-1])
+//     }
+// console.log(arr)
+// }
+// fibonacciArray(10)
 
-var res = 0
-if(oper == "*"){
-    res=x*y
-}
-
-}
+// var res = 0
+// if(oper == "*"){
+//     res=x*y
+// }

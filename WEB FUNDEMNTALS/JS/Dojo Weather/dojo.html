@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <header>
+        <h1>DojoWeather</h1>
+        <div>
+            <ul>
+                <li onclick="display(this)">Burbank</li>
+                <li onclick="display(this)">Chicago</li>
+                <li onclick="display(this)">Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <h2>San Jose</h2>
+        <div>
+            <label for="text">show temperature in </label>
+            <select name="temperature" id="temperature" onchange="degree()">
+                <option value="C">C</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+    </nav>
+    <main>
+        <section class="main">
+
+            <article>
+                <h2>Today</h2>
+                <img src="imgs/some_rain.png" alt="some rain">
+                <p class="weather">some rain</p>
+                <div class="degree">
+                    <p class="num1">24</p>
+                    <p class="num2">18</p>
+                </div>
+            </article>
+            <article>
+                <h2>Tomorrow</h2>
+                <img src="imgs/some_sun.png" alt="some rain">
+                <p class="weather">some sun</p>
+                <div class="degree">
+                    <p class="num1">27</p>
+                    <p class="num2">19</p>
+                </div>
+            </article>
+            <article>
+                <h2>Friday</h2>
+                <img src="imgs/some_clouds.png" alt="some rain">
+                <p class="weather">some clouds</p>
+                <div class="degree">
+                    <p class="num1">21</p>
+                    <p class="num2">16</p>
+                </div>
+            </article>
+            <article>
+                <h2>Saturday</h2>
+                <img src="imgs/some_sun.png" alt="some rain">
+                <p class="weather">some sun</p>
+                <div class="degree">
+                    <p class="num1">26</p>
+                    <p class="num2">21</p>
+                </div>
+            </article>
+        </section>
+        <section class="cookie">
+            <img src="imgs/cookie.png" alt="cookie" id="cookie">
+            <div>
+
+                <h3>Stop! Cookie time</h3>
+                <p>we use cookies (sadly not the edible ones) to personalize
+                    content and ads, to provide social media features and to
+                    analyse our traffic <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="cookiek()">I Accept</button>
+        </section>
+        </main>
+            <script src="funcs.js"></script>
+    
+</body>
+</html>

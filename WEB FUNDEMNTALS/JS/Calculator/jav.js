@@ -48,5 +48,4 @@ if(oper == "*"){
 }
 display.innerText= res;
 x=res
-oper=null
 }
