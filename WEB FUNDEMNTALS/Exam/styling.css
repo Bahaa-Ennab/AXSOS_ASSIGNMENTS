@@ -1,0 +1,158 @@
+/* This is the Exam for the web fundmentals on site
+this code was written  by Bahaa Ennab at Axsos academy
+Email: bahaenab@gmail.com
+Date: 20/3/2025 */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    background-image: url(content/yoga-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2% 2% 10% 2%;
+}
+
+#logo {
+    width: 120px;
+    margin: 0% 20% 0% 0%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    color: white;
+    text-decoration: underline;
+    height: 30px;
+    align-items: center;
+    font-size: large;
+    justify-content: space-evenly;
+}
+
+li {
+    padding: 0% 5% 0% 0%;
+}
+
+li+li::before {
+    content: "|";
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-content {
+    margin: 0;
+    width: 20%;
+}
+
+input {
+    height: 30px;
+    margin: 0% 0% 0% 15%;
+    border: none;
+}
+
+#search-icon {
+    left: 5px;
+    top: 2px;
+
+}
+
+#sound-icon {
+    right: 5px;
+    top: 2px;
+}
+
+.searchbarimg {
+    position: absolute;
+    width: 25px;
+    background-color: white;
+
+}
+
+hr {
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    margin: 1% 2% 2% 2%;
+}
+
+.searchbar {
+    position: relative;
+    border: 4px black solid;
+    background-color: white;
+    min-width: 00px;
+
+
+}
+
+article {
+    text-align: center;
+    color: white;
+    margin: 8% 0% 0% 0%;
+}
+
+h4 {
+    margin: 4% 0% 4% 0%;
+    font-size: 110%;
+}
+
+h1 {
+    font-size: 180%;
+    margin: 0% 0% 2% 0%;
+}
+
+button {
+    width: 20%;
+    height: 40px;
+    background-color: #e0554b;
+    border: solid black 3px;
+    box-shadow: 3px 3px black;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+main {
+    background-color: #eeeeee;
+    padding: 0% 0% 5% 0%;
+}
+
+#main-header {
+    text-align: center;
+    padding: 2%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-photo {
+    width: 40%;
+    border-radius: 50%;
+    border: solid black 4px;
+}
+
+.user-info {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #d04204;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 2% 4% 2%;
+    vertical-align: middle;
+}
+
+.icons {
+    width: 25px;
+}
