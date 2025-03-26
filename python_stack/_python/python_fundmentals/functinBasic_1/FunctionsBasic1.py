@@ -1,13 +1,14 @@
 #1
-def a():
-    return 5  #5
-print(a())
+# def a():
+#     return 5  #5
+# print(a())
 #2
 # def a(): #10
 #     return 5
 # print(a()+a())
 #3
-# def a(): #5
+# def a(): 
+# #5
 #     return 5
 #     return 10
 # print(a())
@@ -55,7 +56,7 @@ print(a())
 # print(b)
 #12
 # b = 500
-# print(b)
+# print(b) #500 500 300 500
 # def a():
 #     b = 300
 #     print(b)
@@ -64,15 +65,15 @@ print(a())
 # a()
 # print(b)
 #13
-# b = 500
-# print(b)
-# def a():
-#     b = 300
-#     print(b)
-#     return b
-# print(b)
-# b=a()
-# print(b)
+b = 500 #500 500 300 300
+print(b)
+def a():
+    b = 300
+    print(b)
+    return b
+print(b)
+b=a()
+print(b)
 #14
 # def a():
 #     print(1)
@@ -82,13 +83,18 @@ print(a())
 #     print(3)
 # a()
 #15
-def a():
-    print(1)
-    x = b()
-    print(x)
-    return 10
-def b():
-    print(3)
-    return 5
-y = a()
-print(y)
+# def a():
+#     print(1)
+#     x = b()
+#     print(x)
+#     return 10
+# def b():
+#     print(3)
+#     return 5
+# y = a()
+# print(y)
+#5
+# def a():
+#     print(5)
+# x = a()
+# print(x)
