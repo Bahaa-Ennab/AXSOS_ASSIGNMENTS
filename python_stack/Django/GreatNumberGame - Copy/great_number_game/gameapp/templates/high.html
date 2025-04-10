@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The number is low</title>
+    {% load static %}
+    <link rel="stylesheet" href="../static/css/styling.css">
+    <link rel="stylesheet" href="{% static 'css/styling.css' %}"> 
+</head>
+<body>
+    <main>
+        <h1>welcome to the Great Number Game!</h1>
+        <p>I am thinking of a number between 1 and 100</p>
+        <p>take a guess</p>
+        <div>
+            <h2>TOO HIGH!!</h2>
+        </div>
+        <form action="usernumber" method="post">
+            {% csrf_token %}
+            <input type="text" name="usernumber" id="textbox">
+            <input type="submit" value="Submit" name="submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>

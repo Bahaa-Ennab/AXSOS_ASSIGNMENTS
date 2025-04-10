@@ -1,0 +1,44 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+h1{
+    font-size: 250%;
+}
+main{
+    text-align: center;
+    margin: 5% 0% 0% 0%;
+}
+p{
+    font-size: 150%;
+    margin: 1% 0% 0% 0%;
+}
+form{
+  margin: 2% 0% 0% 0%;  
+}
+#textbox{
+    display: block;
+    border: solid 2px black;
+    height: 30px;
+}
+#submit{
+    margin-top: 1%;
+    width: 150px;
+    background-color: white;
+    border: solid 2px black;
+    box-shadow: 2px 2px;
+    height: 30px;
+    font-size: larger;
+}
+div{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border: black solid 3px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+.win{
+    background-color: green;
+}
