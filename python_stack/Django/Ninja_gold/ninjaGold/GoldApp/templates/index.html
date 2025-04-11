@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold Game</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <main>
+        <p class="header">
+            This is a game of strategy and luck <br>
+            you have to get your score to 200 to win <br>
+            or else...
+        </p>
+        <div class="score">
+            <form action="total" method="POST">
+                <label for="total">Your Gold:
+                    <input type="text" name="score" value="{{request.session.score}}">
+                </label>
+            </form>
+        </div>
+        <section>
+            <form action="farm" method="POST" class="work-options">
+                {% csrf_token %}
+                <div>
+                    <h2>Farm</h2>
+                    <p class="description">(earns 10-20 gold)</p>
+                    <input type="submit" name="gold" value="Find Gold!" class="button">
+                </div>
+            </form>
+            <form action="cave" method="POST" class="work-options">
+                {% csrf_token %}
+                <div>
+                    <h2>Cave</h2>
+                    <p class="description">(earns 10-20 gold)</p>
+                    <input type="submit" name="gold" value="Find Gold!" class="button">
+                </div>
+            </form>
+            <form action="house" method="POST" class="work-options">
+                {% csrf_token %}
+                <div>
+                    <h2>House</h2>
+                    <p class="description">(earns 10-20 gold)</p>
+                    <input type="submit" name="gold" value="Find Gold!" class="button">
+                </div>
+            </form>
+            <form action="earnorlose" method="POST" class="work-options">
+                {% csrf_token %}
+                <div>
+                    <h2>Quest</h2>
+                    <p class="description">(earns/takes 0-50 gold)</p>
+                    <input type="submit" name="gold" value="Find Gold!" class="button">
+                </div>
+            </form>
+
+        </section>
+        <label for="activites" class="score">Activities: </label>
+        <article class="result">
+            {% for activity in request.session.acitvities %}
+                    <p style="color:{{activity.color}}">{{ activity.acitvity |safe }}</p>
+            {% endfor %}
+        </article>
+        <form action="reset" method="POST">
+            {% csrf_token %}
+            <input type="submit" class="resetbutton" value="reset">
+        </form>
+        
+
+    </main>
+
+</body>
+
+</html>
