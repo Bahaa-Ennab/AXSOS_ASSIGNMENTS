@@ -12,14 +12,14 @@ def index(request):
     
 
 def farm(request):
-    time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    time = datetime.now().strftime('%Y-%m-%d %H:%M:%p')
     temp=random.randint(10,20)
     request.session["score"]+=temp
     if request.session["score"] >= 200:
         return render(request, "win.html" )
     else:
         request.session["acitvities"].append({"acitvity":f"you enterd a farm and earned {temp} gold. at {time}" , "color":"green"})
-    return render(request, "index.html" )
+    return redirect("/")
 
 def cave(request):
     time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -28,8 +28,8 @@ def cave(request):
     if request.session["score"] >= 200:
             return render(request, "win.html" )
     else:
-        request.session["acitvities"].append({"acitvity":f"you enterd a farm and earned {temp} gold. at {time}" , "color":"green"})
-    return render(request, "index.html" )
+        request.session["acitvities"].append({"acitvity":f"you enterd a cave and earned {temp} gold. at {time}" , "color":"green"})
+    return redirect("/")
 
 def house(request):
     time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -38,8 +38,8 @@ def house(request):
     if request.session["score"] >= 200:
             return render(request, "win.html" )
     else:
-        request.session["acitvities"].append({"acitvity":f"you enterd a farm and earned {temp} gold. at {time}" , "color":"green"})
-    return render(request, "index.html" )
+        request.session["acitvities"].append({"acitvity":f"you enterd a house and earned {temp} gold. at {time}" , "color":"green"})
+    return redirect("/")
 
 def earnorlose(request):
     time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -54,7 +54,7 @@ def earnorlose(request):
             request.session["acitvities"].append({"acitvity":f"you enterd a quest and earned {temp} gold. at {time}" , "color":"green"})
         else:
             request.session["acitvities"].append({"acitvity":f"you enterd a quest and <strong>lose</strong> {temp} gold. at {time}" , "color":"red"})
-        return render(request, "index.html" )
+    return redirect("/")
 
 def reset(request):
     del request.session["acitvities"]
