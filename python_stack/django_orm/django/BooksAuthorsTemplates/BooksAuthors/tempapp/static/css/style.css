@@ -1,0 +1,11 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    place-items: center;
+}
+main{
+    display: flex;
+}
+
+
