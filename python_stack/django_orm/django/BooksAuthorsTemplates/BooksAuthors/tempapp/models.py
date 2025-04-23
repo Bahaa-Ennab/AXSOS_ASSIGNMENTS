@@ -19,6 +19,8 @@ class Books(models.Model):
     def makeconnection(post,bookid):
         book1=Books.objects.get(id=bookid)
         author1=Authors.objects.get(id=post['select_author'])
+        print("*******************88888888888")
+        print(type(book1.authors))
         book1.authors.add(author1)
     
     def display_books():

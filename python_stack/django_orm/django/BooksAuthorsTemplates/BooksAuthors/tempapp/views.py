@@ -45,9 +45,7 @@ def display_book_details(request,bookid):
 def add_author_to_book(request,bookid):
     if request.method == 'POST':
         models.Books.makeconnection(request.POST,bookid)
-        return redirect(f'/display_book_details/{bookid}')    
-    else:
-        return redirect(f'/display_book_details/{bookid}')
+    return redirect(f'/display_book_details/{bookid}')    
     
 def display_author_details(request,authorid):
     context={
@@ -60,9 +58,8 @@ def display_author_details(request,authorid):
 def add_book_to_author(request,authorid):
     if request.method == 'POST':
         models.Authors.makeconnection(request.POST,authorid)
-        return redirect(f'/display_author_details/{authorid}')    
-    else:
-        return redirect(f'/display_author_details/{authorid}')
+    return redirect(f'/display_author_details/{authorid}')    
+
     
 
 
