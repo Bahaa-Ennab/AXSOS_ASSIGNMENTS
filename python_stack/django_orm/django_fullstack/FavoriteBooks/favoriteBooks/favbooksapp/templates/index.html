@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registation</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Registartion</h1>
+            <form action="register" method="post">
+                {% csrf_token %}
+                <label for="first_name">first_name</label>
+                <input type="text" name="first_name">
+                <label for="last_name">last name</label>
+                <input type="text" name="last_name">
+                <label for="email">email</label>
+                <input type="email" name="email">
+                <label for="password">password</label>
+                <input type="password" name="password">
+                <label for="password">password_confirm</label>
+                <input type="password" name="password_confirm">
+                <input type="submit" value="Register">
+            </form>
+            {% if messages %}
+            <ul class="messages">    
+                {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <h2>{{register}}</h2>
+        </div>
+        <div>
+            <h1>Login</h1>
+            <form action="login" method="post">
+                {% csrf_token %}
+                <label for="email">email</label>
+                <input type="email" name="email">
+                <label for="password">password</label>
+                <input type="password" name="password">
+                <input type="submit" value="Login">
+            </form>
+            {% if messages %}
+            <ul class="messages">    
+                {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        <form action="deleteuser" method="post">
+            {% csrf_token %}
+
+            <input type="submit" value="delete">
+        </form>
+    </main>
+</body>
+</html>
