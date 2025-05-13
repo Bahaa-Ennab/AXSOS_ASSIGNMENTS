@@ -11,6 +11,25 @@ public class AlfredQuotes {
         // YOUR CODE HERE
         return guest;
     }
+
+    public String guestGreeting(String name, String dayPeriod) {
+        Date date= new Date();
+        int periodOfDay = date.getHours();
+        if (periodOfDay <= 12){
+            String periodOofDay = "morning";
+            String guest = String.format("Good %s , %s. Lovely to see you",periodOofDay, name);
+            return guest;
+
+        }
+        else{
+            String periodOofDay = "evening";
+            String guest = String.format("Good %s , %s. Lovely to see you",periodOofDay, name);
+            return guest;
+
+        }
+        
+        // // YOUR CODE HERE
+    }
     
     public String dateAnnouncement() {
         Date date= new Date() ;
@@ -49,4 +68,29 @@ public class AlfredQuotes {
     // See the specs to overload the guestGreeting method
         // SENSEI BONUS
         // Write your own AlfredQuote method using any of the String methods you have learned!
+        public String lovingOrHatingBack(String loveorhate ){
+            String response;
+            if (loveorhate.contains("love Alfred")){
+                response = "Love";
+            }
+            else if (loveorhate.contains("hate Alfred")) {
+                response = "Hate";
+            }
+            else {
+                response = "Nothing";
+            }
+
+            switch(response){
+                case "Love":
+                    String love = "I love you too my dear!";   
+                    return love ;                
+                case "Hate":
+                    String hate = "I am not thrilled about you either";  
+                    return hate;                
+                case "Nothing":
+                    String nothing = "do you love Alfred?";  
+                    return nothing;                
+            }
+            return response;
+        }
 }

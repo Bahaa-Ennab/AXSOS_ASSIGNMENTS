@@ -11,6 +11,9 @@ public class AlfredTest {
         // Make some test greetings, providing any necessary data
         String testGreeting = alfredBot.basicGreeting();
         String testGuestGreeting = alfredBot.guestGreeting("Beth Kane");
+        String testlovingBack = alfredBot.lovingOrHatingBack("I love Alfred very much");
+        String testHatingBack = alfredBot.lovingOrHatingBack("I hate Alfred very much");
+        String testGuestGreetingwithdate = alfredBot.guestGreeting("Beth Kane", "evening");
         String testDateAnnouncement = alfredBot.dateAnnouncement();
         
         String alexisTest = alfredBot.respondBeforeAlexis(
@@ -26,10 +29,13 @@ public class AlfredTest {
         System.out.println(testGreeting);
         
         // Uncomment these one at a time as you implement each method.
-        System.out.println(testGuestGreeting);
-        System.out.println(testDateAnnouncement);
-        System.out.println(alexisTest);
-        System.out.println(alfredTest);
-        System.out.println(notRelevantTest);
+        // System.out.println(testGuestGreeting);
+        // System.out.println(testDateAnnouncement);
+        // System.out.println(alexisTest);
+        // System.out.println(alfredTest);
+        // System.out.println(notRelevantTest);
+        System.out.println(testGuestGreetingwithdate);
+        System.out.println(testlovingBack);
+        System.out.println(testHatingBack);
     }
 }
