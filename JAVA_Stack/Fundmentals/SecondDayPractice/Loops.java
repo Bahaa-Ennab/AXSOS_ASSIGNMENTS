@@ -3,7 +3,7 @@ public class Loops {
         int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         for (int i=0; i<numbers.length;i++){
             if(numbers[i]%2 != 0 ){
-                System.out.println(numbers[i]);
+                System.out.print(numbers[i]);
             }  
         }
         // Use a for loop to print all odd numbers on the same line
