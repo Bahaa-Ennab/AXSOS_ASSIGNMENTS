@@ -9,10 +9,10 @@ import java.util.ArrayList;
             myList.add("Goodbye World");
             try{
 
-            for(int i = 0; i < myList.size(); i++) {
-                Integer castedValue = (Integer) myList.get(i);
-                System.out.println(castedValue);
-            }
+                for(int i = 0; i < myList.size(); i++) {
+                    Integer castedValue = (Integer) myList.get(i);
+                    System.out.println(castedValue);
+                }
             }
             catch (ClassCastException  e) {
                 System.out.println("can't Cast String to Integer");
