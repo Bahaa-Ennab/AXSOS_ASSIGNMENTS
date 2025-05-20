@@ -1,5 +1,3 @@
-package com.caresoft.clinicapp;
-
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -12,6 +10,8 @@ public class AdminUser extends User implements HIPAACompliantUser, HIPAAComplian
     public AdminUser(Integer employeeID, String role) {
         this.employeeID = employeeID;
         this.role = getRole();
+        this.securityIncidents = new ArrayList<String>();
+        this.setId(employeeID);
     } 
     // TO DO: Implement HIPAACompliantUser!
     public boolean assignPin(int pin){
@@ -24,7 +24,7 @@ public class AdminUser extends User implements HIPAACompliantUser, HIPAAComplian
         }
     }
     public boolean accessAuthorized(Integer confirmedAuthID){
-        if (this.employeeID == confirmedAuthID) {
+        if (id == confirmedAuthID) {
             return true;
         }
         else{
