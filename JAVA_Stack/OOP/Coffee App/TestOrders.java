@@ -6,6 +6,7 @@ public class TestOrders {
         
         Item Item1= new Item("mocha",5);
         Item Item2= new Item("coffee",7);
+        Item Item3= new Item("lattee",10);
         // Item Item3= new Item();
         // Item3.setName("latte");
         // Item3.setPrice(10);
@@ -50,14 +51,15 @@ public class TestOrders {
         // System.out.println(order3.getName());
         // System.out.println(order1.isReady());
         // System.out.println(order1.getItems());
-        // CoffeeKiosk menu= new CoffeeKiosk();
-        // menu.addMenuItem(Item1);
-        // menu.addMenuItem(Item2);
+        CoffeeKiosk menu= new CoffeeKiosk();
+        menu.addMenuItem(Item1);
+        menu.addMenuItem(Item2);
         // menu.displayMenu();
-        CoffeeKiosk order = new CoffeeKiosk();
-        order.addMenuItem(Item1);
-        order.addMenuItem(Item2);
-        order.newOrder();
+        // CoffeeKiosk order = new CoffeeKiosk();
+        // order.addMenuItem(Item1);
+        // order.addMenuItem(Item2);
+        // order.addMenuItem(Item3);
+        // // order.newOrder();
         // System.out.println(menu.displayMenu());
 
 

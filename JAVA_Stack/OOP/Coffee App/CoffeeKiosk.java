@@ -9,7 +9,7 @@ public class CoffeeKiosk{
 
     }
 
-    public String displayMenu(){
+    public static String displayMenu(){
         StringBuilder output = new StringBuilder();
         int i = 0;
         for(Item item : menu){

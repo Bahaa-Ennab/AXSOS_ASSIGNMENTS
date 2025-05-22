@@ -8,12 +8,12 @@
 		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bahaa.helloworld</groupId>
-	<artifactId>HelloWorld</artifactId>
+	<groupId>com.bahaa.AbstractArt</groupId>
+	<artifactId>Disscsion7-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>HelloWorld</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Disscsion7-1</name>
+	<description>AbstractArt Assignment </description>
 	<url/>
 	<licenses>
 		<license/>
@@ -31,39 +31,10 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-	 <dependency>
-        <groupId>jakarta.servlet.jsp.jstl</groupId>
-        <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.glassfish.web</groupId>
-        <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-    </dependency>
-	        <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		 <dependency>
-        <groupId>jakarta.servlet.jsp.jstl</groupId>
-        <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-	    </dependency>
-	    <dependency>
-	        <groupId>org.glassfish.web</groupId>
-	        <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-	    </dependency>
-	    <dependency>
-    <groupId>org.apache.tomcat.embed</groupId>
-    <artifactId>tomcat-embed-jasper</artifactId>
-</dependency>
-
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
