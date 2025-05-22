@@ -8,12 +8,12 @@
 		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bahaa.Routes</groupId>
-	<artifactId>Routes</artifactId>
+	<groupId>com.bahaa.HelloHuman</groupId>
+	<artifactId>HelloHuman</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>RoutesAssignment</name>
-	<description>RoutesAssignment </description>
+	<name>HelloHumanAssignment-3</name>
+	<description>HelloHumanAssignment </description>
 	<url/>
 	<licenses>
 		<license/>
@@ -36,6 +36,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>

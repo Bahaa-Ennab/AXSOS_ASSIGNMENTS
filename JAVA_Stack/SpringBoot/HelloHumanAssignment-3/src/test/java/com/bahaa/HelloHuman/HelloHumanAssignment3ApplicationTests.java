@@ -1,10 +1,10 @@
-package com.bahaa.Routes;
+package com.bahaa.HelloHuman;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RoutesAssignmentApplicationTests {
+class HelloHumanAssignment3ApplicationTests {
 
 	@Test
 	void contextLoads() {
