@@ -6,16 +6,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/daikichi")
 public class DaikichiController {
-    @RequestMapping("/daikichi")
+    @RequestMapping("/")
     public String daikichi() {
         return "Welcome! ";
     }
-    @RequestMapping(value="/daikichi/today", method = RequestMethod.GET)
+    @RequestMapping(value="/today", method = RequestMethod.GET)
     public String today(){
       return "Today you will find luck in all your endeavors!";
     }
-    @RequestMapping(value="/daikichi/tomorrow", method = RequestMethod.GET)
+    @RequestMapping(value="/tomorrow", method = RequestMethod.GET)
     public String tomorrow(){
       return "Tomorrow, an opportunity will arise, so be sure to be open to new ideas!";
     }
