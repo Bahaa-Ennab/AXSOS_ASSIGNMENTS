@@ -8,12 +8,12 @@
 		<version>3.4.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bahaa.FruitStore</groupId>
-	<artifactId>FruitStore</artifactId>
+	<groupId>com.bahaa.SimpleReceipt</groupId>
+	<artifactId>SimpleReceipt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>FruitStore</name>
-	<description>FruitStore</description>
+	<name>SimpleReceipt</name>
+	<description>SimpleReceipt</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -31,6 +31,18 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+	    <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-jasper</artifactId>
+    </dependency>
+    <dependency> 
+        <groupId>jakarta.servlet.jsp.jstl</groupId>
+        <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
