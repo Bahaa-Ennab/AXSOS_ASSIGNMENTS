@@ -13,7 +13,7 @@ public class Time {
 		String pattern = "h:mm a";
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		String date = simpleDateFormat.format(new java.util.Date());
-		model.addAttribute("time",date);
+		model.addAttribute("date",date);
 		return "time.jsp";
 	}
 }

@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Date</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="/js/Date.js"></script>
+
 </head>
 <body>
 <p><c:out value="${date}"/></p>

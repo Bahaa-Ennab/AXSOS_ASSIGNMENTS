@@ -5,10 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Time</title>
+<script type="text/javascript" src="/js/app.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<p><c:out value="${time}"/></p>
+<p><c:out value="${date}"/></p>
 <a href="http://127.0.0.1:8080">Main Page</a>
 
 </body>
