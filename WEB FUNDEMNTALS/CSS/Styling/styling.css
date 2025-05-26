@@ -22,8 +22,9 @@ h2{
 h3{
     text-align: right;
     background-color:#9fc5f8;
-    margin: 0%;
+    margin-right: 0%;
     height: 20px;
-    padding: 10px 10px 10px 100px
+    padding: 10px 10px 10px 100px;
+    color: blue;
 }
 
