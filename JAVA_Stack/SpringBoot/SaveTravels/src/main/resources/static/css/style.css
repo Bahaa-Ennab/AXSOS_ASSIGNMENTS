@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  color: #333;
+  margin: 0% 20% 0% 20%;
+}
+
+.title {
+  color: Navy;
+  font-weight: bold;
+}
+table{
+    background-color: white;
+}
+.table-container {
+  background-color:#fff;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #f8c0c0;
+}
+
+th {
+  font-weight: bold;
+}
