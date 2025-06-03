@@ -14,7 +14,7 @@ import com.bahaa.BooksAPI.mvc.services.BookService;
 @Controller
 public class BookController{
 	@Autowired
-	private BookService bookService;
+	BookService bookService;
 	@RequestMapping("/books/{id}")
 	public String showbook(@PathVariable("id")Long id,Model model) {
         Book book = bookService.findBook(id);
