@@ -25,7 +25,6 @@ public class BurgerController {
 		model.addAttribute("burgers", burgerService.allBurgers());
 		return "index.jsp";
 	}
-expense
 	@PostMapping("/burgers")
 	public String create(@Valid @ModelAttribute("burgers") Burger burgers, BindingResult result) {
 		if (result.hasErrors()) {
