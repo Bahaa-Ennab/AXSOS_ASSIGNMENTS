@@ -1,0 +1,141 @@
+/* ===== General Layout ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+  text-align: center;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* ===== Header/Navbar ===== */
+header {
+  background: #ccc;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  border: none;
+  background: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.navbar input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+/* ===== Main Content ===== */
+main {
+  padding: 20px;
+}
+
+.links {
+  margin: 10px 0;
+}
+
+.links a {
+  margin: 0 10px;
+}
+
+/* ===== Horizontal Rule ===== */
+hr {
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* ===== Table-style Layout (Home Page) ===== */
+.table-container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container.flex {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.column {
+  text-align: left;
+}
+
+.column h2 {
+  border-bottom: 2px solid #333;
+}
+
+.column ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.column li {
+  margin: 5px 0;
+}
+
+.column a {
+  color: #007BFF;
+}
+
+/* ===== Form Styling (New Product / New Category) ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+p h2 {
+  font-size: 16px;
+  margin: 0;
+  width: 30%;
+  text-align: right;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 65%;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
