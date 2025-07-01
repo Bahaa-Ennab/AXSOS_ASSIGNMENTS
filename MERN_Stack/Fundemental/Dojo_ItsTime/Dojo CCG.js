@@ -34,7 +34,7 @@ class Effect extends Card{
             if(this.stat== "resilience"){
                target.resilience = target.resilience + this.magnitude;
             }else{
-                target.power+this.magnitude;
+               target.power = target.power+this.magnitude;
             }
         }else{
             throw new Error("Target must be unit!")
