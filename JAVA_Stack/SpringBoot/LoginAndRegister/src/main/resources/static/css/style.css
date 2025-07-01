@@ -1,18 +1,91 @@
-@charset "UTF-8";
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
 
 body {
-	font-family: Arial, sans-serif;
-	background-color: #fff;
-	padding: 20px;
-	color: #333;
-	margin: 0% 20% 0% 20%;
+  background-color: #f9f9f9;
+  padding: 40px;
 }
 
-.table-container {
-	background-color: #fff;
-	padding: 15px;
-	border-radius: 8px;
-	display: inline-block;
-	width: 100%;
+/* Main container for the two forms */
+main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Stack on small screens */
 }
 
+/* Style for each form container */
+.login-container,
+.register-container {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Keeps forms quarter-ish on desktop */
+  flex: 1 1 300px;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Submit button */
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Error messages */
+form span,
+form .error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Headings inside the containers */
+h3 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Responsive tweak for mobile */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-container,
+  .register-container {
+    width: 90%;
+  }
+}

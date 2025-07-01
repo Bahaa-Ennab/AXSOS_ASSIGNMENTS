@@ -12,6 +12,8 @@
 .nav-title{
     color: aliceblue;
     padding: 2% 0% 0% 0%;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .nav-links{

@@ -35,21 +35,12 @@ public class HomeController {
 	@PostMapping("/register")
 	public String register(@Valid @ModelAttribute("newUser") User newUser, BindingResult result, Model model,
 			HttpSession session) {
-
-		// TO-DO Later -- call a register method in the service
-		// to do some extra validations and create a new user!
 		User signedUpUser = userSerivce.register( newUser , result);
 		if (result.hasErrors()) {
-			// Be sure to send in the empty LoginUser before
-			// re-rendering the page.
 			model.addAttribute("newLogin", new LoginUser());
 			return "index.jsp";
 		}
 		session.setAttribute("loggedUser", signedUpUser);
-		// No errors!
-		// TO-DO Later: Store their ID from the DB in session,
-		// in other words, log them in.
-
 		return "redirect:/home";
 	}
 	

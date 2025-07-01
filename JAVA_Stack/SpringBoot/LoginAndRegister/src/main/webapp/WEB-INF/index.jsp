@@ -12,7 +12,8 @@
 <title>Login Register</title>
 </head>
 <body>
-	<div class="table-container">
+<main>
+	<div class="login-container">
 		<form:form action="/userlogin" method="post" modelAttribute="newLogin">
 			<form:label path="email">email:</form:label>
 			<form:input path="email" />
@@ -37,7 +38,7 @@
 
 	<br>
 	<br>
-	<div class="table-container">
+	<div class="register-container">
 
 		<form:form action="/register" method="post" modelAttribute="newUser">
 			<form:label path="userName">Username:</form:label>
@@ -66,6 +67,7 @@
 		</form:form>
 	</div>
 
+</main>
 
 </body>
 </html>
