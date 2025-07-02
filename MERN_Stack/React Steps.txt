@@ -1,0 +1,12 @@
+mkdir <project-folder>
+cd <project-folder>
+
+mkdir client
+cd client
+npm create vite@latest
+
+cd <project-name>
+
+npm install
+
+npm run dev
