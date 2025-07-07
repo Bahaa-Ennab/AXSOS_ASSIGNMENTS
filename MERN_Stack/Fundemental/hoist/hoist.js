@@ -82,3 +82,13 @@ function learn() {
 }
 console.log(dojo);//san jose
 // -------------------------------------------7-----------------------------------------------
+for(var i = 0; i < 10; i++){
+    setTimeout(function(){
+      console.log("value is " + i);
+  })
+}
+
+let x = 5;
+let y = x++;
+console.log(y);
+console.log(x)

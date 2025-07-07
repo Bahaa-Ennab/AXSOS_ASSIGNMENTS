@@ -1,4 +1,4 @@
-mkdir <project-folder>
+npm npm mkdir <project-folder>
 cd <project-folder>
 
 mkdir client
