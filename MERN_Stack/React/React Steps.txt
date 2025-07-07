@@ -9,4 +9,6 @@ cd <project-name>
 
 npm install
 
+code .
+
 npm run dev
