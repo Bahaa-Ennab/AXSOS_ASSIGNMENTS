@@ -5,14 +5,14 @@ import { data, Link, redirect, useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 
 const Homecomp = () => {
-    const [authors, setAuthors] = useState([])
+    const [players, setPlayers] = useState([])
     const [errors, setErrors] = useState([]);
     const { id } = useParams()
     const redirect = useNavigate()
 
     useEffect(() => {
         axios.get('http://localhost:8000/api/')
-            .then(res => { setAuthors(res.data), console.log(res) })
+            .then(res => { setPlayers(res.data), console.log(res) })
             .catch(err => {
                 const errorResponse = err.response.data.errors; // Get the errors from err.response.data
                 const errorArr = []; // Define a temp error array to push the messages in
@@ -26,34 +26,38 @@ const Homecomp = () => {
         , [])
 
 
-        const handleDelete=(id)=>{
-            axios.delete(`http://localhost:8000/api/delete/`+ id)
-            .then(res=>{
-                setAuthors(authors.filter(author=> author._id != id ))
+    const handleDelete = (id) => {
+        axios.delete(`http://localhost:8000/api/delete/` + id)
+            .then(res => {
+                setPlayers(players.filter(player => player._id != id))
             })
-            .catch(err=>console.log(err))
-        }
+            .catch(err => console.log(err))
+    }
     return (
         <div>
-            <h1>FAvoriate autuhors</h1>
-            <Link to={`/create`}><button>Create</button></Link>
+            <h1>list</h1>
+            <Link to={`/create`}>add Player</Link>
 
             <table border="1">
                 <thead>
                     <tr>
                         <th>Author</th>
+                        <th>preferd spot</th>
                         <th>Actions Available</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {authors.map((author) => (
-                        <tr key={author._id}>
-                            <td>{author.name}</td>
+                    {players.map((player) => (
+                        <tr key={player._id}>
+                            <td>{player.name}</td>
+                            <td>{player.preferdPosition}</td>
                             <td>
-                                <Link to={`/edit/${author._id}`}>
-                                    <button>Edit</button>
-                                </Link>
-                                    <button onClick={()=>handleDelete(author._id)}>delete</button>
+                                <button
+                                    onClick={() => handleDelete(player._id)}
+                                    style={{ backgroundColor: 'red', color: 'white' }}
+                                >
+                                    Delete
+                                </button>
                             </td>
                         </tr>
                     ))}

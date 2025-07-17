@@ -1,13 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const cors = require('cors')
-require('dotenv').config()
-const PORT = process.env.PORT;
-
-app.use(cors())
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-app.get('/', (req, res) => res.send('Hello from server!'));
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+require('dotenv').config();
+require('../server/config/mongoose.config'); // This is new
+app.use(cors());
+app.use(express.json()); // This is new
+app.use(express.urlencoded({ extended: true })); // This is new
+require('../server/routes/player.routes')(app);
+app.listen(8000, () => {
+    console.log("Listening at Port 8000")
+})
